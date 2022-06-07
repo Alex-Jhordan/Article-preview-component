@@ -104,3 +104,14 @@
         gap: 1rem;
     }
 }
+
+.attribution {
+    font-size: 11px;
+    position: fixed;
+    bottom: 20px;
+    color: $heading-text-color;
+
+    &__link {
+        color: $paragraph-text-color;
+    }
+}

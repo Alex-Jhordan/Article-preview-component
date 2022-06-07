@@ -1,0 +1,94 @@
+@media (min-width: 1024px) {
+    
+    .article {
+        display: flex;
+        max-width: 600px;
+        overflow: visible;
+
+        &__cover-image-container {
+            width: 235px;
+            height: auto;
+            overflow: visible;
+        }
+    
+        &__cover-image {
+            margin-top: 0;
+            width: 290px;
+            height: 100%;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+
+        &__body {
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+        }
+
+        &__texts {
+            padding-bottom: 0;
+        }
+
+        &__paragraph {
+            font-size: 0.675rem;
+        }
+
+        &__information {
+            height: auto;
+            padding: 1rem 2rem 1.5rem;
+
+            &--2 {
+                width: auto;
+                bottom: auto;
+                top: 118px;
+                left: 210px;
+                padding: 0.9rem 2.2rem;
+                border-radius: 0.5rem;
+                display: none;
+
+                &::after {
+                    content: "";
+                    width: 0;
+                    aspect-ratio: 1/1;
+                    position: absolute;
+                    bottom: -9px;
+                    left: 100px;
+                    border-top: 10px solid $heading-text-color;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent; 
+                }
+            }
+
+            &--active {
+                display: flex;
+            }
+        }
+
+        &__author-image {
+            width: 30px;
+        }
+    
+        &__author-name {
+            font-size: 0.7rem;
+        }
+    
+        &__publication-date {
+            font-size: 0.7rem;
+        }
+
+        &__share-icon-container {
+    
+            &--2 {
+                display: none;
+            }
+        }
+
+        &__share-text {
+            font-size: 0.6rem;
+            letter-spacing: 0.3rem;
+        }
+    
+        &__social-media-icon{
+            width: 15px;
+        }
+    }
+}

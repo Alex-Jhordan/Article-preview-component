@@ -1,0 +1,106 @@
+.article {
+    width: 90%;
+    max-width: 338px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 30px -20px $paragraph-text-color;
+
+    &__cover-image-container {
+        height: 205px;
+        overflow: hidden;
+    }
+
+    &__cover-image {
+        width: 100%;
+        margin-top: -18px;
+        display: block;
+    }
+
+    &__body {
+        background-color: hsl(0, 0%, 100%);
+        position: relative;
+    }
+
+    &__texts {
+        padding: 2rem 2rem 1.5rem;
+    }
+
+    &__heading {
+        color: $heading-text-color;
+        font-size: 1.05rem;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        color: $paragraph-text-color;
+        font-size: 0.878rem;
+    }
+
+    &__information {
+        height: 68px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 2rem;
+
+        &--2 {
+            background-color: $heading-text-color;
+            position: absolute;
+            width: 100%;
+            transition: all 500ms;
+            bottom: -88px;
+        }
+
+        &--active {
+            bottom: 0;
+        }
+    }
+
+    &__author-image {
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    &__name-date-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &__author-name {
+        color: $heading-text-color;
+        font-weight: 700;
+    }
+
+    &__publication-date {
+        color: $paragraph-text-color;
+    }
+
+    &__share-icon-container {
+        background-color: $main-background-color;
+        width: 30px;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &--2 {
+            background-color: hsl(0, 0%, 100%);
+        }
+    }
+
+    &__share-text {
+        color: $icon-background-color;
+        letter-spacing: 0.5rem;
+    }
+
+    &__social-media-icon-container {
+        flex: 2;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}

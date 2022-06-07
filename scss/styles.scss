@@ -1,0 +1,23 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+.main {
+    background-color: $main-background-color;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@import 'article';
+@import 'media_querie_1024';
